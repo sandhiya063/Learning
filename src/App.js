@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import StudentList from "./StudentList";
+import Paper from "@mui/material/Paper"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+      
+      <h1>Student Information</h1>
+      <form style={{display:"flex"}}>
+        <Paper elevation={6}>
+        Name:<input type="text"/><br/><br/>
+        Username:<input type="text"/><br/><br/>
+        Password:<input type="password"/><br/><br/>
+        <button type="submit">Submit</button>
+        </Paper>  
+
+      </form>
+      <StudentList/>
+
     </div>
+    </>
   );
 }
 
